@@ -18,7 +18,7 @@ function generatePassword() {
     let passwordInput = '';
 
     // numberOfChar variable to validate char length (prompts for number of characters)
-    let numberOfChars = prompt('Please enter a number between 8 and 128');
+    let numberOfChars = prompt('Please enter a number between 8 and 128 to set the length of your password');
     // parseint to convert the string into a number 
     numberOfChars = parseInt(numberOfChars);
     // if the password charcaters are lower than 8 and more than 128 words it'll thorw an alert

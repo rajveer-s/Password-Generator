@@ -60,3 +60,11 @@ function generatePassword() {
         return false;
     }
 
+    // for loop is used to generate a string of characters 
+    for (var i = 0; i < numberOfChars; i++) {
+        var anyInt = Math.floor(Math.random() * charHolder.length);
+        passwordInput += charHolder[anyInt];
+    }
+    return passwordInput;
+}
+

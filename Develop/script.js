@@ -53,3 +53,10 @@ function generatePassword() {
         charHolder.push(...isSpecialChars);
 
     }
+
+    // if they select none of the abpve variables than it'll thorw an alert
+    if (!addLowerCase && !addNums && !addSpecialChars && !addUpperCase) {
+        alert("You have to atleast choose one.");
+        return false;
+    }
+

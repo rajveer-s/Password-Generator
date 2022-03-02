@@ -13,7 +13,7 @@ A random passowrd generator that lets employees to generate a random password ba
 ## Links 
 - [Github Link](https://github.com/rajveer-s/Password-Generator)
 
-- [Deployed Link]()
+- [Deployed Link](https://rajveer-s.github.io/Password-Generator/)
 
 
 

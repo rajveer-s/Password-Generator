@@ -11,3 +11,18 @@ const isNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const isSpecialChars = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '+', '-', '.', '~', '|', '<', '>', '=', '-', '_', '/', ':', ';', '?', '[', ']', '{', '}', '~'];
 // empty array that holds all the confirmed options in it.
 const charHolder = [];
+
+// genrate password function made
+function generatePassword() {
+    // a new variable to hold all the password characters 
+    let passwordInput = '';
+
+    // numberOfChar variable to validate char length (prompts for number of characters)
+    let numberOfChars = prompt('Please enter a number between 8 and 128');
+    // parseint to convert the string into a number 
+    numberOfChars = parseInt(numberOfChars);
+    // if the password charcaters are lower than 8 and more than 128 words it'll thorw an alert
+    if (numberOfChars < 8 || numberOfChars > 128 === true) {
+        alert("Please enter a number between 8 and 128");
+        return '';
+    }

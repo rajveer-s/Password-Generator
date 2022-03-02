@@ -68,3 +68,18 @@ function generatePassword() {
     return passwordInput;
 }
 
+// function to display the password 
+function writePassword() {
+    var password = generatePassword();
+    if (!password) {
+        password = generatePassword();
+    }
+    var passwordText = document.querySelector("#password");
+
+    passwordText.value = password;
+
+}
+
+// added an eventlistener to the genrate button so it listens for a click and runs the function 
+generateBtn.addEventListener("click", writePassword);
+

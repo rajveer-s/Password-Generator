@@ -26,3 +26,30 @@ function generatePassword() {
         alert("Please enter a number between 8 and 128");
         return '';
     }
+
+    // variable adduppercase  confirms for capital letters in the password.
+    let addUpperCase = confirm("Would you like to add Uppercase letters in your password ?");
+    if (addUpperCase) {
+        charHolder.push(...isUpperCase);
+    }
+
+    // variable lower case  confirms for smaller lowercase letters in the password.
+    let addLowerCase = confirm("would you like to add Lowercase letters in your password ?");
+    if (addLowerCase) {
+        charHolder.push(...isLowerCase);
+
+    }
+
+    // variable addnumscase  confirms for numbers in the password.
+    let addNums = confirm("Would you like to add numbers in your password ?");
+    if (addNums) {
+        charHolder.push(...isNumbers);
+
+    }
+
+    // variable addspecialcase  confirms for special characters in the password.
+    let addSpecialChars = confirm("Would you like to add special characters in your password ?");
+    if (addSpecialChars) {
+        charHolder.push(...isSpecialChars);
+
+    }
